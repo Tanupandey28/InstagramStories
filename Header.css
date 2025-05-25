@@ -1,0 +1,51 @@
+.insta-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+  border-bottom: 1px solid #ddd;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.insta-logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.insta-search {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.insta-search input {
+  width: 100%;
+  max-width: 200px;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.insta-icons img.icon {
+  width: 22px;
+  margin-left: 12px;
+  cursor: pointer;
+}
+
+/* Responsive tweaks */
+@media (max-width: 480px) {
+  .insta-search {
+    display: none;
+  }
+
+  .insta-logo {
+    font-size: 18px;
+  }
+
+  .insta-icons img.icon {
+    width: 20px;
+    margin-left: 10px;
+  }
+}
